@@ -11,7 +11,6 @@
 ///// search box
 .search{
     flex: 0 0 60%;
-    background: orangered;
     display:flex;
     align-items: center;
     justify-content: center;
@@ -57,7 +56,7 @@
     &__icon{
       width: 2rem;
       height: 2rem;
-      fill:var(--color-grey-dark-3)
+      fill:var(--color-grey-dark-2);
 
     }
 }
@@ -65,27 +64,53 @@
 ///// user 
 
 .user-nav{
-    background: greenyellow;
+    // background: greenyellow;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    align-self: stretch;
+    & > *{  
+        cursor:pointer;
+        padding: 0 2px;
+        height:100%;
+    }
+    & > *:hover{
+        background:var(--color-grey-light-2);
+        
+    }
     &__icon-box{
-
+       display: flex;
+       align-items: center;
+       position: relative;
+    
     }
     &__icon{
         height: 2.25rem;
         width: 2.25rem;
+        
     }
     &__notification{
-
+       font-size: .8rem;
+       height: 1.75rem;
+       width: 1.75rem;
+       border-radius: 50%;
+       background-color:var(--color-primary);
+       color:#fff;
+       padding:5px;
+       position:absolute;
+       top:5px;
+       right:16.5rem;
+       display: flex;
+       justify-content: center;
+       align-items:center;
     }
     &__user{
+      flex: 0 0 17%; 
      
-
     }
     &__user-photo{
     }
-    &__user-name{
-
-    }
-}
+ }
 #user-photo{
     width: 3.75rem!important;
 

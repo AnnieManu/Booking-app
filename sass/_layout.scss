@@ -7,13 +7,14 @@
   min-height: 50rem;
 }
 .header{
-  font-size:1.7rem;
+  font-size:1.4rem;
   height: 7rem;
   background-color: #fff;
   border-bottom: var(--color-grey-light-2);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position:relative;
 
 }
 .content{
@@ -21,7 +22,7 @@
 
 }
 .hotel-view{
-  background-color: #fff;
+  background-color:red;
   flex:1; /*will occupy the rest 100% space over all the available space it has*/
 
 }
