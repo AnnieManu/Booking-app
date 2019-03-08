@@ -113,6 +113,20 @@ body {
 #user-photo {
   width: 3.75rem !important; }
 
+.side-nav__icon {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+svg {
+  width: 1.75rem;
+  height: 1.75rem; }
+
+.legal {
+  font-size: 1.2rem;
+  text-align: center;
+  padding: 2.5rem;
+  color: var(--color-grey-light-4); }
+
 .container {
   max-width: 120rem;
   margin: 8rem auto;
@@ -134,17 +148,19 @@ body {
   display: flex; }
 
 .hotel-view {
-  background-color: red;
+  height: 80rem;
   flex: 1;
   /*will occupy the rest 100% space over all the available space it has*/ }
 
 .sidebar {
   background: var(--color-grey-dark-1);
-  flex: 0 0 18%; }
+  flex: 0 0 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
 
 .form {
   display: flex;
-  background: orange;
   flex: 0 0 45%;
   justify-content: center;
   transform: all .3; }
