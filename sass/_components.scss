@@ -197,3 +197,39 @@
     padding:2.5rem;
     color:var(--color-grey-light-4);
 }
+
+//-------Gallery-----//
+.gallery{
+    display:flex;
+    &__photo{
+        display:block;
+        width:100%;
+    }
+}
+//-------Hotel Overview-----//
+.overview{
+    &__heading{
+
+    }
+    &__star,
+    &__icon-location{
+     width:1.75rem;
+     height:1.75rem;
+     fill:var(--color-primary);
+    }
+    &__icon-star{
+
+    }
+    &__location{
+
+    }
+    &__rating{
+
+    }
+    &__rating-avarage{
+
+    }
+   &__rating-count{
+
+   }
+}
