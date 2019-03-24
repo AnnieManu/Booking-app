@@ -257,6 +257,8 @@ body {
   border-bottom: var(---line);
   display: flex;
   flex-wrap: wrap; }
+  .list__item {
+    flex: 0 0 50%; }
 
 .list-item {
   list-style: none; }
