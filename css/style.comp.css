@@ -10,8 +10,8 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
   --color-shadow-dark: 0 2rem 6rem rgba(0, 0, 0, .3);
-  ---line: 1px solid var(--color-grey-light-2);
-  ---shadow-light: 0 2rem 5rem rgba(0,0,0, 0.6); }
+  --line: 1px solid var(--color-grey-light-2);
+  --shadow-light: 0 2rem 5rem rgba(0,0,0, 0.6); }
 
 * {
   margin: 0;
@@ -259,9 +259,42 @@ body {
   flex-wrap: wrap; }
   .list__item {
     flex: 0 0 50%; }
+  .list .list-item {
+    list-style: none; }
+  .list__item::before {
+    display: inline-block;
+    content: "";
+    height: 1rem;
+    width: 1rem;
+    margin-right: .7px;
+    background-color: var(--color-primary);
+    -webkit-mask-image: url(../img/chevron-thin-right.svg);
+    -webkit-mask-size: cover; }
 
-.list-item {
-  list-style: none; }
+.recommand {
+  font-size: 1.3rem;
+  color: var(--color-grey-dark-3);
+  display: flex;
+  align-items: center; }
+  .recommand__photo {
+    box-sizing: content-box;
+    height: 4rem;
+    width: 4rem;
+    border-radius: 50%;
+    border: 3px solid #fff; }
+    .recommand__photo:not(:last-child) {
+      margin-right: -1.5rem; }
+  .recommand__count {
+    margin-right: auto; }
+
+.review {
+  background: #fff;
+  box-shadow: var(--shadow-ligh);
+  padding: 3rem;
+  margin-bottom: 3.5rem; }
+  .review__photo {
+    width: 4.5rem;
+    height: 4.5rem; }
 
 .container {
   max-width: 120rem;
@@ -315,5 +348,4 @@ body {
   background: var(--color-grey-light-1); }
 
 .user-reviews {
-  background: yellowgreen;
   flex: 1; }
