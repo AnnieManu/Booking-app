@@ -14,7 +14,11 @@
     display:flex;
     align-items: center;
     justify-content: center;
-
+    @media only screen and (max-width:$bp-smallest){ 
+        background: var(--color-grey-light-2);
+     }
+   
+   
     &__input{
     font-family: inherit;
     font-size:inherit;
@@ -142,6 +146,11 @@
      @media only screen and(max-width:900px){
         justify-content: center;
       }
+      @media only screen and(max-width:$bp-small){
+       flex-direction: column;
+       padding:1.5rem .5rem;
+      }
+    
     }
    
     &__link{
@@ -156,6 +165,13 @@
         height:1.75rem;
         margin-right:2rem;
         fill:currentColor;
+        @media only screen and(max-width:$bp-small){
+            margin-right:0;
+            margin-bottom:.7rem;
+            width:1.5rem;
+            height:1.5rem;
+          }
+        
     }
    
     &__item{
@@ -232,6 +248,10 @@
      text-transform: uppercase;
      letter-spacing: 1px;
      padding:1.5rem 3rem;
+     @media only screen and(max-width:$bp-small){
+       font-size:1.5rem;
+       padding:1.5rem 2rem;
+      }
 
     }
     &__stars{
@@ -263,17 +283,28 @@
       color:grey;
       align-self: stretch;
       padding:0 2.25rem;
-      
+      @media only screen and(max-width:$bp-small){
+        padding:0;
+       }   
     }
-    &__rating-avarage{
+    &__avarage-rating{
        margin-left:1rem;
        font-size:2.5rem;
        font-weight: 300;
+       @media only screen and(max-width:$bp-small){
+        display:none;
+       }
     }
     &__rating-count{
        font-size: 8rem;
        text-transform: uppercase;
-   }   
+       
+   } 
+   &__avarage-rating{
+    @media only screen and(max-width:$bp-small){
+        display:none;
+       }
+   }  
 } 
 /*-------Hotel Overview-----*/
 
