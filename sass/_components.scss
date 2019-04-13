@@ -120,8 +120,13 @@
     font-size:1.4rem;
     list-style: none;
     margin-top:3.5rem;
+    @media only screen and (max-width:900px){ 
+        display:flex;
+        margin:0;
+      }
     &__item{
-
+     position:relative;
+ 
     }
     &__link:link,
      &__visited{
@@ -133,8 +138,10 @@
      display:flex;
      text-align: center;
      z-index:10;
-     position: relative
-     
+     position: relative;
+     @media only screen and(max-width:900px){
+        justify-content: center;
+      }
     }
    
     &__link{
@@ -155,6 +162,12 @@
      position: relative;
       &:not(:last-child){
         margin-bottom: .5rem;
+        @media only screen and(max-width:900px){
+          margin:0;
+        }
+      }
+      @media only screen and(max-width:900px){
+        flex:1;
       }
     }
 
@@ -195,6 +208,9 @@
     text-align: center;
     padding:2.5rem;
     color:var(--color-grey-light-4);
+    @media only screen and (max-width:900px){ 
+        display:none;
+      }
 }
 
 //-------Gallery-----//
@@ -358,11 +374,14 @@
         border:3px solid #fff;
         &:not(:last-child){
             margin-right:-1.5rem;
-
         }
+
     }
     &__count{
         margin-right:auto;
+    }
+    &__friends{
+        display: flex;
     }
 }
 /////Reviews
@@ -373,6 +392,10 @@
     padding:3rem;
     margin-bottom: 3.5rem;
     overflow: hidden;
+    @media only screen and(max-width:900px){
+        padding: 2rem;
+        margin-bottom:3rem;
+      }
  &__text{
     margin-bottom:2rem;
     z-index:10;
@@ -423,7 +446,7 @@
 }
 /////CALL TO ACTION
 .cta{
-    padding:1.5rem;
+    padding:.5rem;
     text-align: center;
      &__book-now{
       font-size: 1.2rem;
@@ -431,6 +454,9 @@
       font-weight: 300;
       margin-bottom: 2.5rem;
      }
+     @media only screen and(max-width:900px){
+        padding: 3rem;
+      }
 }
 /////CALL TO ACTION
 .btn{

@@ -5,6 +5,11 @@
   background-color:var(--color-grey-light-2);
   box-shadow: var(--color-shadow-dark);
   min-height: 50rem;
+  @media only screen and (max-width:$bp-largest){ 
+    margin:0;
+    max-width:100%;
+    width:100%;
+  }
 }
 .header{
   font-size:1.4rem;
@@ -19,6 +24,9 @@
 }
 .content{
   display: flex;
+  @media only screen and (max-width:900px){ 
+    flex-direction: column;
+  }
 
 }
 .hotel-view{
@@ -45,6 +53,9 @@
   display:flex;
   padding:4.5rem;
   border-bottom:var(--line);
+  @media only screen and(max-width:900px){
+    padding: 3rem;
+  }
 }
 .description{
  
@@ -54,6 +65,10 @@
   flex: 0 0 60%; // grow shrink and spece it occupies
   margin-right:4.5rem;
   background:var(--color-grey-light-1);
+  @media only screen and(max-width:900px){
+    padding: 2rem;
+    margin-right:3rem;
+  }
 
 }
 
